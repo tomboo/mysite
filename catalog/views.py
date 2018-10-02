@@ -68,6 +68,11 @@ def weights_data(request):
             }
         },
 
+        # Make xAxis uniform with respect to time
+        'xAxis': {
+            'ordinal': False
+        },
+
         'series': [{
             'id': 'weight',
             'name': 'Weight',
